@@ -1,0 +1,19 @@
+meta {
+  name: Delete guitar
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{BASE_URL}}/functions/guitars?id=c5be3fb7-6c78-48c4-9809-6c6d89f96c9a
+  body: none
+  auth: inherit
+}
+
+params:query {
+  id: c5be3fb7-6c78-48c4-9809-6c6d89f96c9a
+}
+
+settings {
+  encodeUrl: true
+}
