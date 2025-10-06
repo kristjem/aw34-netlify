@@ -1,0 +1,25 @@
+meta {
+  name: Create guitar
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8888/.netlify/functions/guitars
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "brand": "Fendir",
+    "model": "Stratuscauster",
+    "color": "Sunburst",
+    "year": 2015,
+    "price": 250
+  }
+}
+
+settings {
+  encodeUrl: true
+}
